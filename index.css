@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "SegoeWPN";
+    src: url(./res/fonts/SegoeWPN.ttf);
+}
+
+@font-face {
+    font-family: "MrsEavesItalic";
+    font-style: italic;
+    src: url(./res/fonts/MrsEaves-Italic.woff);
+}
+
+@font-face {
+    font-family: "SegoeWPN Light";
+    font-weight: lighter;
+    src: url(./res/fonts/SegoeWP\ Light.ttf);
+}
+
+@font-face {
+    font-family: "UniversCELight";
+    src: url(./res/fonts/Univers\ CE\ 45\ Light.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    min-width: 1280px;
+}
+
+body,
+footer,
+main {
+    width: 100%;
+    background: white;
+}
+
+main {
+    margin-top: -377px;
+    margin-left: -29px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 35px;
+    flex-wrap: wrap;
+    
+}
+
+header {
+    color: white;
+    height: 867px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    justify-items: center;
+    grid-template-rows: 1fr 1.5fr 1.5fr;
+}
+
+header .phone {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+header .title-Main {
+    font-family: "MrsEavesItalic";
+    position: relative;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 100px;
+    font-size: 82.63px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+header .header-nav {
+    font-family: "SegoeWPN";
+    padding-top: 50px;
+    justify-content: flex-end;
+    margin-right: 150px;
+    z-index: 1;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 150px);
+    font-size: 22.63px;
+}
+
+header .coffee-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    z-index: 2;
+    align-items: center;
+    justify-self: baseline;
+    width: 100%;
+
+}
+
+.coffee-container img:first-of-type {
+    margin-top: -70px;
+    margin-left: 50px;
+}
+
+.coffee-container img:nth-of-type(2) {
+    justify-self: flex-end;
+    margin-right: 50px;
+}
+
+header .banner-text {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    width: 100%;
+    z-index: 2;
+    font-family: "SegoeWPN";
+    justify-self: flex-start;
+    margin-top: 30px;
+}
+
+.banner-text img {
+    margin-top: -100px;
+    align-self: center;
+}
+
+header .banner-text span:first-of-type {
+    display: block;
+    font-weight: bold;
+    font-size: 64.63px;
+}
+
+header .banner-text span:nth-of-type(2) {
+    font-family: 'SegoeWPN Light';
+    font-size: 44.63px;
+    display: block;
+}
+
+.banner-text button {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 142px;
+    height: 42px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.13);
+    background-color: #175b3b;
+    font-family: 'SegoeWPN Light';
+    font-size: 22.63px;
+    color: white;
+}
+
+main .tabs {
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+main .tabs div {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+main .tabs div:nth-of-type(2) {
+    border: 2px solid rgb(215, 215, 215);
+    border-bottom: 0;
+    overflow: hidden;
+    background: white;
+    z-index: 2;
+}
+
+.tabs span {
+    display: block;
+    font-family: 'SegoeWPN Light';
+    font-size: 22.63px;
+
+}
+
+.tabs span::after {
+    content: 'WebSites';
+    display: block;
+}
+
+main .ipad {
+    margin-top: -2px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    border: 2px solid rgb(215, 215, 215);
+}
+
+.ipad img {
+    margin-top: 60px;
+}
+
+.ipad .text-block {
+    padding: 0px 54px;
+    align-self: flex-end;
+    flex-direction: column;
+    display: flex;
+}
+
+.ipad h1 {
+    font-weight: lighter;
+    font-family: 'SegoeWPN Light';
+}
+
+.ipad p {
+    font-family: 'UniversCELight';
+    font-size: 14px;
+    line-height: 1.714;
+}
+
+.ipad p::after,
+h1::after {
+    height: 20px;
+    content: '';
+    display: block;
+}
+
+.advantages-container {
+    display: grid;
+    padding: 20px 0px 60px 0px;
+    margin-left: -18px;
+    grid-template-columns: 510px 1fr;
+    position: relative;
+}
+
+.advantages-container li {
+    font-size: 16px;
+    font-family: 'UniversCELight';
+    margin-top: 15px;
+}
+
+hr {
+    align-items: flex-start;
+    margin-left: -9%;
+    margin-right: -11.5%;
+}
+
+.advantages-container ul {
+    list-style-type: none;
+}
+
+.advantages-container li::before {
+    content: url(./res/images/ChooseMarker.png);
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.advantages-text {
+    padding-top: 30px;
+}
+
+.advantages-container h1 {
+    font-weight: lighter;
+    font-family: 'SegoeWPN Light';
+}
+
+.advantages-container img {
+    justify-self: flex-start;
+}
+
+.pre-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    gap: 80px;
+    justify-items: stretch;
+}
+
+.pre-footer .login {
+    padding: 10px 25px;
+    background: rgb(230, 118, 36);
+    border: 2px solid rgb(230, 118, 36);
+    border-radius: 5px;
+}
+
+.pre-footer .subscribe {
+    padding: 10px 25px;
+    background: rgb(1, 212, 243);
+    border: 2px solid rgb(1, 212, 243);
+    border-radius: 5px;
+}
+
+.pre-footer .subscribe form {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 71px;
+}
+
+.pre-footer .login form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr) 81px;
+}
+
+.pre-footer h2 {
+    font-size: 28px;
+    font-family: "SegoeWPN Light";
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.pre-footer input,
+button {
+    font-family: "SegoeWPN Light";
+    height: 26px;
+}
+
+.pre-footer button {
+    color: rgb(255, 255, 255);
+    padding: 1px 8px;
+    border: 0;
+}
+
+.login button {
+    background: rgb(68, 68, 68);
+}
+
+.pre-footer .subscribe button {
+    background: rgb(2, 155, 177);
+}
+
+footer{
+    background: rgb(36, 39, 44);
+    padding: 0 12% 0 10%;
+    height: 243px;
+    display: grid;
+    align-content: center;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr) 2fr 2fr;
+    color: white;
+    font-family: 'SegoeWPN Light';
+}
+
+footer p, 
+footer span{
+    display: block;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 2px 0;
+}
+
+footer h2{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+footer .testimoanials p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.title-footer{
+    font-family: "MrsEavesItalic";
+    position: relative;
+    align-self: center;
+    justify-self: flex-start;
+
+    font-size: 82.63px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.678);
+}
+  
